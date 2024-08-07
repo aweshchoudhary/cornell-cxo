@@ -32,7 +32,7 @@ get_header();
             <div>
                 <ul class="list-none rounded-lg md:space-y-8 space-y-5 m-0 border-2 border-primary border-solid md:p-10 p-5 w-full">
                     <li class="flex items-center gap-5">
-                        <figure class="md:w-[60px]">
+                        <figure class="md:w-[60px] w-[40px]">
                             <?php $image_id = 842;
                             echo wp_get_attachment_image($image_id, "large", false, [
                                 "loading" => "lazy",
@@ -50,7 +50,7 @@ get_header();
                         </div>
                     </li>
                     <li class="flex items-center gap-5">
-                        <figure class="md:w-[60px]">
+                        <figure class="md:w-[60px] w-[40px]">
                             <?php $image_id = 841;
                             echo wp_get_attachment_image($image_id, "large", false, [
                                 "loading" => "lazy",
@@ -68,7 +68,7 @@ get_header();
                         </div>
                     </li>
                     <li class="flex items-center gap-5">
-                        <figure class="md:w-[60px]">
+                        <figure class="md:w-[60px] w-[40px]">
                             <?php $image_id = 840;
                             echo wp_get_attachment_image($image_id, "large", false, [
                                 "loading" => "lazy",
