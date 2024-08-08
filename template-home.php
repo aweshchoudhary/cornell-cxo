@@ -41,7 +41,7 @@ get_header();
                             <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <div>
-                            <p class="mb-0 md:text-xl text-lg font-medium">
+                            <p class="mb-0 md:text-xl text-lg font-medium text-primary">
                                 STARTS ON
                             </p>
                             <p class="mb-0 md:text-2xl text-xl font-semibold">
@@ -59,7 +59,7 @@ get_header();
                             <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <div>
-                            <p class="mb-0 md:text-xl text-lg font-medium">
+                            <p class="mb-0 md:text-xl text-lg font-medium text-primary">
                                 DURATION
                             </p>
                             <p class="mb-0 md:text-2xl text-xl font-semibold">
@@ -77,12 +77,13 @@ get_header();
                             <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <div>
-                            <p class="mb-0 md:text-xl text-lg font-medium">
+                            <p class="mb-0 md:text-xl text-lg font-medium text-primary">
                                 PROGRAM FEE
                             </p>
                             <p class="mb-0 md:text-2xl text-xl font-semibold">
                                 US$4,800
                             </p>
+                            <button class="underline font-medium text-primary hover:text-primary/80" onclick="showModal('emi_form_modal')">Easy EMI options available</button>
                         </div>
                     </li>
                 </ul>
@@ -91,7 +92,7 @@ get_header();
     </section>
     <section class="bg-[#656d71]">
         <h2 class="text-center text-white">
-            Program Benefits
+            Program Highlights
         </h2>
         <ul class="list-none p-0 m-0 h-full flex flex-wrap md:gap-x-12 md:gap-y-20 gap-5">
             <li class="lg:basis-1/4 md:basis-1/3 flex-1 basis-full space-y-5">
@@ -131,7 +132,7 @@ get_header();
                     <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                 </figure>
                 <div class="text-center text-white">
-                    <p class="md:text-xl text-lg font-medium">Regular assessments and leaderboard</p>
+                    <p class="md:text-xl text-lg font-medium">Peer coaching and assessments</p>
                 </div>
             </li>
             <li class="lg:basis-1/4 md:basis-1/3 flex-1 basis-full space-y-5">
@@ -883,257 +884,269 @@ get_header();
             </p>
         </div>
     </section>
-
-    <div id="Michelle_Duguid" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 850;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Michelle Duguid
-                    </h2>
-                    <h5 class="text-third">
-                        Associate Dean of Diversity, Inclusion, and Belonging & Associate Professor of Management and Organisations
-                    </h5>
-                    Michelle M. Duguid is Associate Dean of Diversity, Inclusion, and Belonging and an associate professor of management and organizations at the Samuel Curtis Johnson Graduate School of Management at Cornell University. She received her MS and PhD in organizational behavior from Cornell University. She serves on the editorial board of Organization Science, the Academy of Management Journal, the Academy of Management Review, and Personnel Psychology.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Tony_Simons" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 853;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Tony Simons
-                    </h2>
-                    <h5 class="text-third">
-                        Professor of Innovation & Dynamic Management
-                    </h5>
-                    Tony Simons, the Louis B. Schaeneman Jr. Professor of Innovation & Dynamic Management, teaches organizational behavior, negotiation and leadership at the Cornell School of Hotel Administration. His research examines trust and credibility as relational, individual and collective qualities. Simons' research has focused on how well people are seen as keeping their word–delivering on their promises and living espoused values. His research and consulting work supports managers in meeting this challenge. He speaks, trains, consults, and designs surveys for organizations both within and beyond the hospitality industry.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="General_George_Casey" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 852;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        General George Casey
-                    </h2>
-                    <h5 class="text-third">
-                        Senior Faculty of Leadership
-                    </h5>
-
-
-                    General George Casey is an accomplished soldier and an authority on strategic leadership. As the Army Chief of Staff, he led one of the nation's largest and most complex organizations during one of the most extraordinary periods in our history. Currently, he lectures internationally on leadership to the leaders of national and multinational corporations and at other business schools. He has broad international experience. Born in Japan, he served in operational assignments in Europe, the Balkans, and the Middle East.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Neil_Tarallo" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 851;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Neil Tarallo
-                    </h2>
-                    <h5 class="text-third">
-                        Senior Lecturer of Entrepreneurship
-                    </h5>
-
-
-                    Neil Tarallo is a senior lecturer of entrepreneurship at the Hotel School, SC Johnson College of Business. He previously served as the director of the Cornell University Entrepreneurship Bootcamp for Disabled Veterans. Neil has developed expertise in establishing culture, mindset, and structure for organizations that spurs market driven innovation & entrepreneurial activity. He teaches and have created a broad spectrum of entrepreneurship courses with significant experience developing academic innovation & entrepreneurship programs, including centers and institutes, dating back to 1994. He is also member of a venture capital partnership and an active angel investor.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Laura_Chulak_Georgianna" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 854;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Laura Chulak Georgianna
-                    </h2>
-                    <h5 class="text-third">
-                        Senior Lecturer, Management and Organizations
-                    </h5>
-
-                    Laura Chulak Georgianna is a distinguished leader in organizational development and executive education, currently serving as the Executive Director of Leadership Programs at Cornell University's Johnson Graduate School of Management. With extensive experience in developing leadership capabilities, Laura has designed and overseen a wide range of initiatives that enhance team effectiveness, resilience, and leadership growth. Her expertise spans across various industries, including global pharmaceuticals and IT services, where she has led transformative organizational changes and strategic cultural transitions. As a Senior Lecturer, Laura imparts practical leadership skills through experiential learning, including high-stakes expeditions and intensive coaching programs. Her robust background in organizational capability and development positions her as a trusted advisor and educator for senior executives seeking to elevate their leadership impact.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Allan_Filipowicz" class="modal-custom">
-        <div class="modal-content">
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 752;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Allan Filipowicz
-                    </h2>
-                    <h5 class="text-third">
-                        Clinical Professor of Management and Organisations
-                    </h5>
-
-                    Allan Filipowicz teaches Managing and Leading Organizations, Negotiations, Executive Leadership and Development, Leading Teams and Critical and Strategic Thinking. He was also a Former Dean for Executive Education. He has recently won a Best Core Faculty award. He has taught executives across the globe. His professional experience includes banking and consulting, including running his own boutique consulting firm and four years with the Boston Consulting Group in Paris.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Derek_Cabrerra" class="modal-custom">
-        <div class="modal-content">
-
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 746;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Derek Cabrerra
-                    </h2>
-                    <h5 class="text-third">
-                        Systems Scientist
-                    </h5>
-                    Derek Cabrera is an internationally known systems scientist who in 2021 was inducted as a Member of the International Academy for Systems and Cybernetic Sciences (IASCYS) for outstanding contributions to the field. He is the Faculty Director for the Graduate Certification Program in Systems Thinking, Modeling, and Leadership and is a senior scientist at Cabrera Research Lab. Cabrera has developed a suite of systems thinking tools for use in academia, business, and beyond including the first validated personal inventory of systems thinking.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
-    <div id="Gautam_Ahuja" class="modal-custom">
-        <div class="modal-content">
-
-            <div class="flex md:flex-row flex-col md:gap-10 gap-5">
-                <div class="basis-1/3">
-                    <figure class="aspect-square w-full">
-                        <?php $image_id = 751;
-                        echo wp_get_attachment_image($image_id, "medium", false, [
-                            "loading" => "lazy",
-                            "class" => "image-cover",
-                        ]); ?>
-                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
-                    </figure>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-2">
-                        Gautam Ahuja
-                    </h2>
-                    <h5 class="text-third">
-                        Professor of Management and Organisations
-                    </h5>
-
-                    Gautam Ahuja teaches strategy and competitive analysis. In 2016, he received the BPS Wiley Outstanding Educator Award for his lifetime teaching contributions. At Cornell, he has received the Cornell-Tech Best Professor Award as well as the Johnson Graduate School of Management’s Apple Award. His research interests include competitive analysis, technology and innovation, globalization, and the use of inter-organizational arrangements such as mergers, acquisitions, and alliances in these contexts.
-                </div>
-            </div>
-        </div>
-        <div class="c-backdrop">
-            <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                </svg></button>
-        </div>
-    </div>
 </article>
+
+<!-- modals -->
+<div id="emi_form_modal" class="modal-custom">
+    <div class="modal-content">
+        <h2 class="text-center">Avail affordable EMI options & advance your professional learning journey</h2>
+        <?php echo do_shortcode('[wpforms id="766"]'); ?>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Michelle_Duguid" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 850;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Michelle Duguid
+                </h2>
+                <h5 class="text-third">
+                    Associate Dean of Diversity, Inclusion, and Belonging & Associate Professor of Management and Organisations
+                </h5>
+                Michelle M. Duguid is Associate Dean of Diversity, Inclusion, and Belonging and an associate professor of management and organizations at the Samuel Curtis Johnson Graduate School of Management at Cornell University. She received her MS and PhD in organizational behavior from Cornell University. She serves on the editorial board of Organization Science, the Academy of Management Journal, the Academy of Management Review, and Personnel Psychology.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Tony_Simons" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 853;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Tony Simons
+                </h2>
+                <h5 class="text-third">
+                    Professor of Innovation & Dynamic Management
+                </h5>
+                Tony Simons, the Louis B. Schaeneman Jr. Professor of Innovation & Dynamic Management, teaches organizational behavior, negotiation and leadership at the Cornell School of Hotel Administration. His research examines trust and credibility as relational, individual and collective qualities. Simons' research has focused on how well people are seen as keeping their word–delivering on their promises and living espoused values. His research and consulting work supports managers in meeting this challenge. He speaks, trains, consults, and designs surveys for organizations both within and beyond the hospitality industry.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="General_George_Casey" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 852;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    General George Casey
+                </h2>
+                <h5 class="text-third">
+                    Senior Faculty of Leadership
+                </h5>
+
+
+                General George Casey is an accomplished soldier and an authority on strategic leadership. As the Army Chief of Staff, he led one of the nation's largest and most complex organizations during one of the most extraordinary periods in our history. Currently, he lectures internationally on leadership to the leaders of national and multinational corporations and at other business schools. He has broad international experience. Born in Japan, he served in operational assignments in Europe, the Balkans, and the Middle East.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Neil_Tarallo" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 851;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Neil Tarallo
+                </h2>
+                <h5 class="text-third">
+                    Senior Lecturer of Entrepreneurship
+                </h5>
+
+
+                Neil Tarallo is a senior lecturer of entrepreneurship at the Hotel School, SC Johnson College of Business. He previously served as the director of the Cornell University Entrepreneurship Bootcamp for Disabled Veterans. Neil has developed expertise in establishing culture, mindset, and structure for organizations that spurs market driven innovation & entrepreneurial activity. He teaches and have created a broad spectrum of entrepreneurship courses with significant experience developing academic innovation & entrepreneurship programs, including centers and institutes, dating back to 1994. He is also member of a venture capital partnership and an active angel investor.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Laura_Chulak_Georgianna" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 854;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Laura Chulak Georgianna
+                </h2>
+                <h5 class="text-third">
+                    Senior Lecturer, Management and Organizations
+                </h5>
+
+                Laura Chulak Georgianna is a distinguished leader in organizational development and executive education, currently serving as the Executive Director of Leadership Programs at Cornell University's Johnson Graduate School of Management. With extensive experience in developing leadership capabilities, Laura has designed and overseen a wide range of initiatives that enhance team effectiveness, resilience, and leadership growth. Her expertise spans across various industries, including global pharmaceuticals and IT services, where she has led transformative organizational changes and strategic cultural transitions. As a Senior Lecturer, Laura imparts practical leadership skills through experiential learning, including high-stakes expeditions and intensive coaching programs. Her robust background in organizational capability and development positions her as a trusted advisor and educator for senior executives seeking to elevate their leadership impact.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Allan_Filipowicz" class="modal-custom">
+    <div class="modal-content">
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 752;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Allan Filipowicz
+                </h2>
+                <h5 class="text-third">
+                    Clinical Professor of Management and Organisations
+                </h5>
+
+                Allan Filipowicz teaches Managing and Leading Organizations, Negotiations, Executive Leadership and Development, Leading Teams and Critical and Strategic Thinking. He was also a Former Dean for Executive Education. He has recently won a Best Core Faculty award. He has taught executives across the globe. His professional experience includes banking and consulting, including running his own boutique consulting firm and four years with the Boston Consulting Group in Paris.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Derek_Cabrerra" class="modal-custom">
+    <div class="modal-content">
+
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 746;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Derek Cabrerra
+                </h2>
+                <h5 class="text-third">
+                    Systems Scientist
+                </h5>
+                Derek Cabrera is an internationally known systems scientist who in 2021 was inducted as a Member of the International Academy for Systems and Cybernetic Sciences (IASCYS) for outstanding contributions to the field. He is the Faculty Director for the Graduate Certification Program in Systems Thinking, Modeling, and Leadership and is a senior scientist at Cabrera Research Lab. Cabrera has developed a suite of systems thinking tools for use in academia, business, and beyond including the first validated personal inventory of systems thinking.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
+<div id="Gautam_Ahuja" class="modal-custom">
+    <div class="modal-content">
+
+        <div class="flex md:flex-row flex-col md:gap-10 gap-5">
+            <div class="basis-1/3">
+                <figure class="aspect-square w-full">
+                    <?php $image_id = 751;
+                    echo wp_get_attachment_image($image_id, "medium", false, [
+                        "loading" => "lazy",
+                        "class" => "image-cover",
+                    ]); ?>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id) ?? "Cornell CXO or XED website image"; ?></figcaption>
+                </figure>
+            </div>
+            <div class="flex-1">
+                <h2 class="mb-2">
+                    Gautam Ahuja
+                </h2>
+                <h5 class="text-third">
+                    Professor of Management and Organisations
+                </h5>
+
+                Gautam Ahuja teaches strategy and competitive analysis. In 2016, he received the BPS Wiley Outstanding Educator Award for his lifetime teaching contributions. At Cornell, he has received the Cornell-Tech Best Professor Award as well as the Johnson Graduate School of Management’s Apple Award. His research interests include competitive analysis, technology and innovation, globalization, and the use of inter-organizational arrangements such as mergers, acquisitions, and alliances in these contexts.
+            </div>
+        </div>
+    </div>
+    <div class="c-backdrop">
+        <button class="modal-close-btn">Close <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg></button>
+    </div>
+</div>
 
 <div class="overlay fixed bottom-0 left-0 z-[999] w-full bg-white/85 py-3 flex justify-center backdrop-blur">
     <a href="/#get-brochure" class="cbtn-primary">Download Brochure</a>

@@ -1,6 +1,8 @@
 <?php
 get_header(); ?>
 <article>
-    <?php the_content(); ?>
+    <section>
+        <?php the_content(); ?>
+    </section>
 </article>
 <?php get_footer(); ?>

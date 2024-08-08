@@ -1,5 +1,5 @@
 </main>
-<footer class="section mb-20 bg-primary text-white">
+<footer class="section <?php echo is_page_template('template-home.php') ? 'mb-20' : '' ?> bg-primary text-white">
     <div class="flex flex-wrap lg:gap-20 md:gap-10 gap-5">
         <div class="shrink-0">
             <figure class="md:w-32 w-20">
